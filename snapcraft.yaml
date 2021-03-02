@@ -14,7 +14,7 @@ apps:
   protoc:
     command: bin/protoc
     environment:
-      PATH: $SNAP/bin:$PATH
+      PATH: $PATH:$SNAP/bin
       LD_LIBRARY_PATH: $SNAP_LIBRARY_PATH:$SNAP/lib:$LD_LIBRARY_PATH
   protoc-gen-go:
     command: bin/protoc-gen-go
